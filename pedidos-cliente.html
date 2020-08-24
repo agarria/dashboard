@@ -1,0 +1,294 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="robots" content="index, follow">
+    <meta name="autor" content="Alex García">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Pedidos por Cliente</title>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/thumbnail.png">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-name">
+            <ion-icon name="person-outline"></ion-icon>
+            Pedidos por Cliente
+        </div>
+        <div class="nav-container">
+            <a class="nav-link">
+                <span class="link-tag">agarria@icloud.com</span>
+            </a>
+            <a class="nav-link link-action"><ion-icon name="log-out-outline"></ion-icon>Cerrar Sesión</a>
+        </div>
+    </nav>
+    <sidenav>
+        <span class="side-brand">Dashboard</span>
+        <div class="side-container">
+            <a class="side-link">
+                <ion-icon name="business-outline"></ion-icon>
+                Ensamble por Empresa
+            </a>
+            <a class="side-link">
+                <ion-icon name="body-outline"></ion-icon>
+                Ensamble por Persona
+            </a>
+            <a class="side-link">
+                <ion-icon name="person-outline"></ion-icon>
+                Pedidos por Cliente
+            </a>
+            <a class="side-link">
+                <ion-icon name="pricetags-outline"></ion-icon>
+                Pedidos por Tienda
+            </a>
+            <a class="side-link">
+                <ion-icon name="location-outline"></ion-icon>
+                Rutas
+            </a>
+            <a class="side-link">
+                <ion-icon name="alarm-outline"></ion-icon>
+                Tiempos
+            </a>
+        </div>
+    </sidenav>
+    <main>
+        <div class="container">
+            <div class="stats">
+                <div class="stat-data">
+                    <span class="data-icon">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </span>
+                    <span class="data-name">Compras</span>
+                    <span class="data-number">432</span>
+                </div>
+                <div class="stat-data data-red">
+                    <span class="data-icon">
+                        <ion-icon name="construct-outline"></ion-icon>
+                    </span>
+                    <span class="data-name">Ensamble</span>
+                    <span class="data-number">25%</span>
+                </div>
+                <div class="stat-data data-yellow">
+                    <span class="data-icon">
+                        <ion-icon name="happy-outline"></ion-icon>
+                    </span>
+                    <span class="data-name">Personal</span>
+                    <span class="data-number">20</span>
+                </div>
+                <div class="stat-data data-black">
+                    <span class="data-icon">
+                        <ion-icon name="alarm-outline"></ion-icon>
+                    </span>
+                    <span class="data-name">Tiempo</span>
+                    <span class="data-number">6hr</span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="filter">
+                <div class="company-filter">
+                    <label><ion-icon name="person-outline"></ion-icon>Cliente:</label>
+                    <select>
+                        <option value="" disabled selected>Escoger</option>
+                        <option value="">Cliente A</option>
+                        <option value="">Cliente B</option>
+                    </select>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>LINEA</th>
+                        <th>Tiempo (Hrs)</th>    
+                        <th>SEMANA1</th> 
+                        <th>SEMANA2</th> 
+                        <th>SEMANA3</th> 
+                        <th>SEMANA4</th> 
+                        <th>SEMANA5</th> 
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="th">XTZ150</td>
+                        <td>0.75</td>    
+                        <td>0.75</td>    
+                        <td>1.5</td> 
+                        <td>2.25</td>    
+                        <td>3</td>   
+                        <td>4.5</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td class="th">XTZ150</td>
+                        <td>0.75</td>    
+                        <td>0.75</td>    
+                        <td>1.5</td> 
+                        <td>2.25</td>    
+                        <td>3</td>   
+                        <td>4.5</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td class="th">XTZ150</td>
+                        <td>0.75</td>    
+                        <td>0.75</td>    
+                        <td>1.5</td> 
+                        <td>2.25</td>    
+                        <td>3</td>   
+                        <td>4.5</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td class="total">Total</td>
+                        <td>0.75</td>    
+                        <td>0.75</td>    
+                        <td>1.5</td> 
+                        <td>2.25</td>    
+                        <td>3</td>   
+                        <td>4.5</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <div class="filter">
+                <div class="label-filter"><ion-icon name="grid-outline"></ion-icon>Comparativo</div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>LINEA</th>
+                        <th>Tiempo (Hrs)</th>    
+                        <th>SEMANA1</th> 
+                        <th>SEMANA2</th> 
+                        <th>SEMANA3</th> 
+                        <th>SEMANA4</th> 
+                        <th>SEMANA5</th> 
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="th">XTZ150</td>
+                        <td>0.75</td>    
+                        <td>0.75</td>    
+                        <td>1.5</td> 
+                        <td>2.25</td>    
+                        <td>3</td>   
+                        <td>4.5</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td class="th">XTZ150</td>
+                        <td>0.75</td>    
+                        <td>0.75</td>    
+                        <td>1.5</td> 
+                        <td>2.25</td>    
+                        <td>3</td>   
+                        <td>4.5</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td class="th">XTZ150</td>
+                        <td>0.75</td>    
+                        <td>0.75</td>    
+                        <td>1.5</td> 
+                        <td>2.25</td>    
+                        <td>3</td>   
+                        <td>4.5</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td class="total">Total</td>
+                        <td>0.75</td>    
+                        <td>0.75</td>    
+                        <td>1.5</td> 
+                        <td>2.25</td>    
+                        <td>3</td>   
+                        <td>4.5</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <div class="global">
+                <div class="filter">
+                    <div class="label-filter"><ion-icon name="calendar-outline"></ion-icon>Generales por Semana</div>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="th">Minimo Ensamblado</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td class="th">Promedio</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td class="th">Maximo Ensamblado</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td class="total">Total</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="graph">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4', 'Semana 5', 'Total'],
+            datasets: [{
+                label: 'Comparativo',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+</script>
+</html>

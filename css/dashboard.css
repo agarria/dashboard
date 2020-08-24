@@ -1,0 +1,464 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html,
+body {
+	font-family: 'Poppins', sans-serif;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #212121;
+	overflow: auto;
+	-webkit-user-select: none;
+    user-select: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+nav {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: calc(100% - 240px);
+    height: 80px;
+    padding: 0 5%;
+    margin: 0;
+    background: #ECF0F3;
+}
+
+.nav-name {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: auto;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nav-name ion-icon {
+    font-size: 20px;
+    margin: 0 5px 0 0;
+}
+
+.nav-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: auto;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: auto;
+    height: 100%;
+    padding: 0;
+    margin: 0 10px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nav-link:last-child {
+    margin: 0;
+}
+
+.nav-link ion-icon {
+    font-size: 20px;
+    margin: 0 5px 0 0;
+}
+
+.link-action {
+    cursor: pointer;
+}
+
+.link-tag {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 6px;
+    margin: 0 6px;
+    color: #239a7f;
+    border: 1px solid #239a7f;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+
+sidenav {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #ECF0F3;
+}
+
+.side-brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    background: #239a7f;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.side-container {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.side-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    float: left;
+    width: 100%;
+    height: 60px;
+    line-height: 12px;
+    padding: 0 10%;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: all .3s ease;
+    border-bottom: 1px solid #fff;
+}
+
+.side-link:hover,
+.side-link:focus,
+.side-link:active {
+    color: #239a7f;
+}
+
+.side-link:hover ion-icon {
+    margin: 0 20px 0 0;
+}
+
+.side-link ion-icon {
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    transition: all .3s ease;
+}
+
+main {
+    position: absolute;
+    display: block;
+    top: 80px;
+    left: 240px;
+    width: calc(100% - 240px);
+    height: calc(100% - 80px);
+    padding: 5%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #fff;
+}
+
+.container {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 5% 0;
+}
+
+.container:last-child {
+    margin: 0;
+}
+
+.stats {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.stat-data {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: calc(25% - 20px);
+    height: auto;
+    padding: 15px;
+    margin: 0 20px 0 0;
+    color: #1BC5BD;
+    background: #C9F7F5;
+    border: 1px solid #1BC5BD;
+}
+
+.stat-data:last-child {
+    width: 25%;
+    margin: 0;
+}
+
+.data-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    float: left;
+    width: 20%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+}
+
+.data-name {
+    position: relative;
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.data-number {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.data-red {
+    color: #F64E60;
+    background: #FFE2E5;
+    border: 1px solid #F64E60;
+}
+
+.data-yellow {
+    color: #FFA800;
+    background: #FFF4DE;
+    border: 1px solid #FFA800;
+}
+
+.data-black {
+    color: #212121;
+    background: #D6D6E0;
+    border: 1px solid #212121;
+}
+
+table {
+    width: 100%;
+    border-collapse: initial;
+    border-spacing: 0;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid #ECF0F3;
+    box-shadow: none;
+}
+
+th,
+td {
+    width: auto;
+    vertical-align: middle;
+    outline: none;
+    padding: 12px 6px;
+    font-size: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ECF0F3;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    text-align: center;
+}
+
+th {
+    border-color: #fff;
+    font-weight: 600;
+    background: #ECF0F3;
+}
+
+td {
+    color: #464E5F;
+    font-weight: 400;
+}
+
+.filter {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 3% 0;
+}
+
+.company-filter {
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.company-filter label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    padding: 0;
+    margin: 0 10px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.company-filter label ion-icon {
+    font-size: 20px;
+    margin: 0 5px 0 0;
+}
+
+.company-filter select {
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #ECF0F3;
+    border-radius: 5px;
+}
+
+.company-filter select:hover,
+.company-filter select:focus,
+.company-filter select:active {
+    outline: 0;
+}
+
+.label-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.label-filter ion-icon {
+    font-size: 20px;
+    margin: 0 5px 0 0;
+}
+
+.th {
+    border-color: #fff;
+    font-weight: 600;
+    background: #ECF0F3;
+}
+
+.total {
+    color: #fff;
+    border-color: #fff;
+    font-weight: 600;
+    background: #239a7f;
+}
+
+.global {
+    position: relative;
+    display: block;
+    float: left;
+    width: calc(50% - 20px);
+    height: auto;
+    padding: 0;
+    margin: 0 20px 0 0;
+}
+
+.graph {
+    position: relative;
+    display: block;
+    float: left;
+    width: calc(50% - 20px);
+    height: auto;
+    padding: 0;
+    margin: 0 0 0 20px;
+}
