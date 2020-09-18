@@ -25,8 +25,11 @@
             </a>
             <a class="nav-link link-action"><ion-icon name="log-out-outline"></ion-icon>Cerrar Sesión</a>
         </div>
+        <span id="menu_icon" class="side-open" onclick="menu_mobile()">
+            <ion-icon name="grid-outline"></ion-icon>
+        </span>
     </nav>
-    <sidenav>
+    <sidenav id="menu_mobile">
         <span class="side-brand">Dashboard</span>
         <div class="side-container">
             <a class="side-link">
@@ -52,6 +55,10 @@
             <a class="side-link">
                 <ion-icon name="alarm-outline"></ion-icon>
                 Tiempos
+            </a>
+            <a class="side-link side-log-out">
+                <ion-icon name="log-out-outline"></ion-icon>
+                Cerrar Sesión
             </a>
         </div>
     </sidenav>
@@ -219,5 +226,13 @@
         </div>
     </main>
 </body>
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script type="text/javascript" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script type="text/javascript">
+    function menu_mobile() {
+        var menu = document.getElementById("menu_mobile");
+        var icon = document.getElementById("menu_icon");
+        menu.classList.toggle("show-menu-mobile");
+        icon.classList.toggle("close-menu-mobile");
+    }
+</script>
 </html>

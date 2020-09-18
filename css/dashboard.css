@@ -139,7 +139,33 @@ sidenav {
     height: 100%;
     padding: 0;
     margin: 0;
+    z-index: 999;
     background: #ECF0F3;
+    transition: all .3s ease;
+}
+
+.show-menu-mobile {
+    transform: translate(0, 0);
+}
+
+.side-open {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: #239a7f;
+    overflow: hidden;
+    font-size: 22px;
+    transition: all .3s ease;
+}
+
+.close-menu-mobile {
+    background: #F64E60;
 }
 
 .side-brand {
@@ -166,6 +192,14 @@ sidenav {
     height: auto;
     padding: 0;
     margin: 0;
+}
+
+.side-log-out {
+    color: #F64E60;
+}
+
+.side-log-out:hover {
+    color: #F64E60 !important;
 }
 
 .side-link {
@@ -461,4 +495,85 @@ td {
     height: auto;
     padding: 0;
     margin: 0 0 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        width: 100%;
+        height: 60px;
+    }
+
+    .nav-name {
+        font-size: 12px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    main {
+        top: 60px;
+        width: 100%;
+        height: auto;
+        padding: 10% 5%;
+        left: 0;
+    }
+
+    .data-name {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .container {
+        margin: 0 0 10% 0;
+    }
+
+    .company-filter label {
+        font-size: 12px;
+    }
+
+    .company-filter select {
+        font-size: 12px;
+    }
+
+    sidenav {
+        width: calc(100% - 60px);
+        overflow: visible;
+        transform: translate(-100%, 0);
+    }
+
+    .side-brand {
+        height: 60px;
+    }
+
+    .side-open {
+        display: flex;
+    }
+
+    .side-link ion-icon {
+        font-size: 22px;
+    }
+
+    .stat-data {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        margin: 0 0 20px 0;
+    }
+
+    .stat-data:last-child {
+        width: 100%;
+    }
+
+    .global {
+        width: 100%;
+        margin: 0 0 5% 0;
+    }
+
+    .graph {
+        width: 100%;
+        margin: 0;
+    }
+
 }
